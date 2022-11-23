@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Citi Bank</title>
+  </head>
+  <body>
+    <header>
+      <div class="input_header">
+        <a href="logout.php">Log Out</a>
+        <a href="summary.html">Account Summary</a>
+      </div>
+
+      <nav>
+        <div class="nav-content">
+        <img src="logs.png" alt="Logo Page" />
+
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="menu">
+          <li>
+            <a href="summary.html"
+              ><span class="fa fa-home"></span>Account Summary</a
+            >
+          </li>
+          <li>
+            <a href="transaction.html"
+              ><span class="fa fa-exchange"></span>Transaction History</a
+            >
+          </li>
+          <li>
+            <a href="transfer.html"><span class="fa fa-money"></span>Transfer</a>
+          </li>
+          <li>
+            <a href="bill.html"><span class="fa fa-book"></span>Bill Pay</a>
+          </li>
+          <li><a href="profile.html"><span class="fa fa-arrow-circle-right"></span>Profile</a></li>
+          <li>
+            <a href="contact.html"
+              ><span class="fa fa-volume-control-phone"></span>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <!---End of navigation Menu Bar-->
+    
+    <aside>
+         <ul>
+           <li><a href="summary.html"><span class="fa fa-home"></span>Account Summary</a></li>
+           <li><a href="transaction.html"><span class="fa fa-exchange"></span>Transaction History</a></li>
+           <li><a href="transfer.html"><span class="fa fa-money"></span>Transfer</a></li>
+           <li><a href="bill.html"><span class="fa fa-book"></span>Bill Pay</a></li>
+           <li><a href="profile.html"><span class="fa fa-arrow-circle-right"></span>Profile</a></li>
+           <li><a href="contact.html"><span class="fa fa-volume-control-phone"></span>Contact Us</a></li>
+         </ul>
+    </aside>
+
+    <div class="content">
+         <div class="date">
+             <p class="welcome"><b>Welcome:</b> Edgar Gonzalez</p>
+            <p id="demo" style="font-size: 13px"></p>
+            <script>
+              document.getElementById("demo").innerHTML = Date();
+            </script>
+         </div>
+         
+         <div class="arrow">
+            <a href="transfer.html" class="active"><span class="fa fa-arrow-circle-right"></span>Transfer Funds</a>
+            <a href="preview.php"><span class="fa fa-arrow-circle-right"></span>Transfer Funds</a>
+            <a href="#success.html"><span class="fa fa-arrow-circle-right"></span>Transfer Funds</a>
+         </div>
+
+         <div class="overlay">
+            <div class="form_contact">
+              <form method="post" action="preview.php">
+                <label>Bank Name</label><br>
+                <input type="text" placeholder="Bank Name" name="bnknam" required><br><br>
+    
+    <label>Account Number</label><br>
+                 <input type="number" placeholder="Account Number" name="accnum" required><br><br>
+     
+     <label>Re-entered Account Number</label><br>
+                <input type="number" placeholder="Re-entered Account Number" name="accnum1" required><br><br>
+    
+    <label>Routing Number</label><br>
+                 <input type="number" placeholder="Routing Number" name="rutnum" required><br><br>
+     
+     <label>Re-entered Routing Number</label><br>
+                 <input type="number" placeholder="Re-entered Routing Number" name="rutnum1" required><br><br> 
+     <label>Amount $</label><br>
+                 <input type="text" placeholder="0,000.00" name="amut" required><br><br>
+     <Select class="opt" name="sel">
+             <option>Choose Account to be Debit</option>
+             <option>Checking 454909xxxx $10,451,098.89</option>
+         <option>Savings 903423xxxx $1,098.60</option>
+         <option>Loan 776093xxxx $0.00</option>
+         <option>IRA 659834xxxx $0.00</option>
+         <option>Equity 764039xxxx $0.00</option>
+        </select><br><br>
+
+                 <input type="submit" value="Next" class="btn"><br><br>
+                 
+</form>
+            </div>
+        </div>
+         
+
+    </div>
+
+    <div class="footer">
+      <img
+        src="index.png"
+      />
+      <p style="padding: 5px; font-size: 12px; color:#fff;">
+        Citibank provides information about and access to accounts and
+        financial services provided by Citibank, N.A. and its affiliates in
+        the Singapore and its territories. Terms, conditions and fees for
+        accounts, products, programs and services are subject to change. Not
+        all accounts, products, and services as well as pricing described here
+        are available in all jurisdictions or to all customers. Your country
+        of citizenship, domicile, or residence, if other than the Singapore,
+        may have laws, rules, and regulations that govern or affect your
+        application for and use of our accounts, products and services,
+        including laws and regulations regarding taxes, exchange and/or
+        capital controls that you are responsible for following.
+      </p>
+      <span class="fa fa-fort-awesome"></span>
+    </div>
+
+  </body>
+</html>
