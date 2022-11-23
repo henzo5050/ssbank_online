@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Security Savings Bank</title>
+  </head>
+  <body>
+    <header>
+      <div class="input_header">
+        <a href="logout.php">Log Out</a>
+        <a href="summary.html">Account Summary</a>
+      </div>
+
+      <nav>
+        <div class="nav-content">
+        <img src="logs.png" alt="Logo Page" />
+
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="menu">
+          <li>
+            <a href="summary.html"
+              ><span class="fa fa-home"></span>Account Summary</a
+            >
+          </li>
+          <li>
+            <a href="transaction.html"
+              ><span class="fa fa-exchange"></span>Transaction History</a
+            >
+          </li>
+          <li>
+            <a href="transfer.html"><span class="fa fa-money"></span>Transfer</a>
+          </li>
+          <li>
+            <a href="bill.html"><span class="fa fa-book"></span>Bill Pay</a>
+          </li>
+          <li><a href="profile.html"><span class="fa fa-arrow-circle-right"></span>Profile</a></li>
+          <li>
+            <a href="contact.html"
+              ><span class="fa fa-volume-control-phone"></span>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <!---End of navigation Menu Bar-->
+    
+    <aside>
+         <ul>
+           <li><a href="summary.html"><span class="fa fa-home"></span>Account Summary</a></li>
+           <li><a href="transaction.html"><span class="fa fa-exchange"></span>Transaction History</a></li>
+           <li><a href="transfer.html"><span class="fa fa-money"></span>Transfer</a></li>
+           <li><a href="bill.html"><span class="fa fa-book"></span>Bill Pay</a></li>
+           <li><a href="profile.html"><span class="fa fa-arrow-circle-right"></span>Profile</a></li>
+           <li><a href="contact.html"><span class="fa fa-volume-control-phone"></span>Contact Us</a></li>
+         </ul>
+    </aside>
+
+    <div class="content">
+         <div class="date">
+             <p class="welcome"><b>Welcome:</b> Robert Shoemaker</p>
+            <p id="demo" style="font-size: 13px"></p>
+            <script>
+              document.getElementById("demo").innerHTML = Date();
+            </script>
+            <h4><span class="fa fa-home"></span> Account Summary</h4>
+         </div>
+            
+         <div style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>Account Type</th>
+              <th>Account Number</th>
+              <th>Current Balance</th>
+              <th>Available Balance</th>
+              <th>Account Status</th>
+            </tr>
+            <tr>
+              <td><a href="transaction.html">Checking</a></td>
+              <td>&nbsp;454909xxxx&nbsp;</td>
+              <td style="color:green;">$0.00</td>
+              <td style="color:green;">$0.00</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td><a href="transaction.html">Savings</a></td>
+              <td>&nbsp;903423xxxx&nbsp;</td>
+              <td style="color:green;">$0.00</td>
+              <td style="color:green;">$0.00</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td><a href="transaction.html">Loan</a></td>
+              <td>&nbsp;776093xxxx&nbsp;</td>
+              <td style="color:red;">$0.00</td>
+              <td style="color:red;">$0.00</td>
+              <td><a href="#">Closed</a></td>
+            </tr>
+            <tr>
+              <td><a href="transaction.html">IRA</a></td>
+              <td>&nbsp;659834xxxx&nbsp;</td>
+              <td style="color:red;">$0.00</td>
+              <td style="color:red;">$0.00</td>
+              <td><a href="#">Open Now</a></td>
+            </tr>
+            <tr>
+              <td><a href="transaction.html">Equity</a></td>
+              <td>&nbsp;764039xxxx&nbsp;</td>
+              <td style="color:red;">$0.00</td>
+              <td style="color:red;">$0.00</td>
+              <td>Active</td>
+            </tr>
+          </table>
+        </div>
+         
+
+    </div>
+
+    <div class="footer">
+      <img
+        src="index.png"
+      />
+      <p style="padding: 5px; font-size: 12px; color:#fff;">
+        SSB provides information about and access to accounts and
+      financial services provided by Security Savings Bank, N.A. and its affiliates in
+      the United Kingdom (UK) and its territories. Terms, conditions and fees for
+      accounts, products, programs and services are subject to change. Not
+      all accounts, products, and services as well as pricing described here
+      are available in all jurisdictions or to all customers. Your country
+      of citizenship, domicile, or residence, if other than the United Kingdom,
+      may have laws, rules, and regulations that govern or affect your
+      application for and use of our accounts, products and services,
+      including laws and regulations regarding taxes, exchange and/or
+      capital controls that you are responsible for following.
+      </p>
+      <span class="fa fa-fort-awesome"></span>
+    </div>
+
+  </body>
+</html>
